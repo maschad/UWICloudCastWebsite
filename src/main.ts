@@ -6,6 +6,7 @@ import { AppModule } from './app';
 
 // common styles
 import './common/styles.scss';
+import './common/anim.scss';
 
 
 if (process.env.NODE_ENV === 'production') {

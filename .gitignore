@@ -30,3 +30,4 @@ tmp/
 __MACOSX/
 .DS_Store
 Thumbs.db
+/assets/paragraph.txt

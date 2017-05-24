@@ -1,4 +1,7 @@
 ### UWI CloudCast Literacy Tutor web app  built with Angular2, AngularFire2, and Firebase SDK 3
+
+Built with **Angular2** and **AngularFire2**. The app features a **Firebase** backend with **OAuth** authentication. 
+
 - Angular2 `2.2.0`
 - Angular2 Router `3.2.0`
 - AngularFire2 `2.0.0-beta.5`
@@ -26,7 +29,6 @@ $ npm install
 $ npm start
 ```
 
-#
 #### Install firebase-tools:
 ```shell
 $ npm install -g firebase-tools

@@ -3,46 +3,54 @@
 "~minx/src/functions",
 "~minx/src/mixins";
 
-//===================================================================
-//  APP
-//===================================================================
-
-.main {
-  padding-bottom: 90px;
-}
-
 //Variables
 $light-grey: #686866;
 $dark-grey: rgba(85, 85, 85, 0.5);
 $white : #FFF;
-$width: 300px;
+
+$font_stack:"Francois One", Calibri;
+
+body{
+  background-color: white;
+  font-size: 13pt;
+}
+
+.score{
+  text-align: right;
+  margin-left: 60%;
+  display: flex;
+  padding: 5px;
+}
+
 
 //Box Class
 .boxed {
+  font-family: $font_stack;
+  font-size: 12pt;
   display: flex;
   background-color: #393636;
-  width: 300px;
+  width: 800px;
+  height: 200px;
   border-radius: 5px;
   box-shadow: 0 0 5px #333;
   padding: 25px;
-  margin: 25px;
 
+  color:white;
   @include media-query(540) {
     font-size: rem(24px);
   }
 }
 
 //Sidebar content
-:host /deep/ .sidebar-content {
+.sidebar-content {
   &.ng-sidebar--opened {
-    /*width: $width;
-    max-width: $width;
-    
+    width: 300px;
     padding: 25px;
-    align-content: center;*/
+    align-content: center;
     outline-color: gray;
-    background-color: $white;
+    background-color: $light-grey;
   }
+
 
   &.ng-sidebar--opened.ng-sidebar--over {
     box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
@@ -56,33 +64,46 @@ $width: 300px;
   border: none;
   margin-bottom: 0.5em;
   padding: 0.5em 2em;
-  transition: background-color 0.6s;
-  
-  width: 360px;
-  text-align: left;
-  outline: none;
-  
+  transition: background-color 0.15s;
+
   &:hover {
-    background-color: #5C788A;
+    background-color: $dark-grey;
     color: $white;
-    
-    font-size: 20px;
   }
 }
+
+
 
 //Button style
 .button {
   @include button-base;
-  margin-left: 5px;
-  outline: gray;
-  border: 3px;
-  border-radius: 1px;
+  outline: none;
+  border: 3px solid #BEC6D0;
+  border-radius: 5px;
   padding: 3px;
-  width: 50px;
+  width: 70px;
   height: 50px;
   overflow: hidden;
   background: #e0dfe2;
   transform: translate(0, 0);
+  color: white;
+  cursor: pointer;
+  margin-left: 15%;
+  
+  &:hover{
+    margin-top: -1px;
+  }
+}
+
+h3{
+    margin-top: 30px;
+    color: #424242;
+}
+
+h5,h6{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #6B6B6B;
 }
 
 .container {
@@ -90,33 +111,12 @@ $width: 300px;
   cursor: pointer;
 }
 
-.barP{
-  &:hover{
-    .bar1, .bar2, .bar3 {
-        background-color:white;
-        border: 1px solid black;
-    }
-  }  
-}
-
-.top_but{
-  margin-top: 20px;
-}
-
 .bar1, .bar2, .bar3 {
-  background-color: black;
+  background-color: white;
   width: 35px;
   height: 5px;
   margin: 5px 5px;
   transition: 0.4s;
-  
-  border-radius: 5px;
-  z-index: 1;
-  
-  /*&:hover{
-    background-color:white;
-    border:2px solid black;
-  }*/
 }
 
 /* Rotate first bar */
@@ -135,3 +135,6 @@ $width: 300px;
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+
+

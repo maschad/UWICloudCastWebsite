@@ -1,12 +1,8 @@
 {
-  "name": "todo-angular2-firebase",
+  "name": "uwi-cloudcast-platform",
   "version": "0.8.0",
-  "description": "Todo app with Angular2, AngularFire2, and Firebase",
+  "description": "Literacy tutor built with Angular2, AngularFire2, and Firebase",
   "homepage": "https://github.com/r-park/todo-angular2-firebase",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/r-park/todo-angular2-firebase.git"
-  },
   "license": "MIT",
   "private": true,
   "engines": {
@@ -27,22 +23,29 @@
     "test:watch": "cross-env NODE_ENV=test karma start --reporters dots"
   },
   "dependencies": {
-    "@angular/common": "2.2.0",
-    "@angular/compiler": "2.2.0",
-    "@angular/core": "2.2.0",
-    "@angular/forms": "2.2.0",
-    "@angular/platform-browser": "2.2.0",
-    "@angular/platform-browser-dynamic": "2.2.0",
-    "@angular/router": "3.2.0",
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
     "@angular/upgrade": "2.2.0",
+    "angular-in-memory-web-api": "~0.3.0",
+    "angular2-elastic": "^0.13.0",
     "angularfire2": "2.0.0-beta.5",
-    "core-js": "~2.4.1",
+    "chart.js": "^2.5.0",
+    "core-js": "^2.4.1",
     "firebase": "3.5.2",
-    "rxjs": "5.0.0-beta.12",
-    "zone.js": "~0.6.26"
+    "ng-sidebar": "^4.2.3",
+    "ng2-charts": "^1.5.0",
+    "rxjs": "^5.0.1",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "@types/core-js": "~0.9.34",
+    "@types/core-js": "0.9.35",
     "@types/jasmine": "~2.5.36",
     "@types/node": "~6.0.46",
     "@types/request": "0.0.30",
@@ -81,16 +84,5 @@
     "webpack-dev-server": "2.1.0-beta.4",
     "webpack-md5-hash": "~0.0.5",
     "winston": "~2.3.0"
-  },
-  "author": {
-    "name": "Richard Park",
-    "email": "objectiv@gmail.com"
-  },
-  "contributors": [
-    {"name": "Cody Lundquist", "email": "cody.lundquist@gmail.com"},
-    {"name": "Jason Shultz", "email": ""},
-    {"name": "Luke Schlangen", "email": "luke@lukeschlangen.com"},
-    {"name": "Sinan Bolel", "email": "sinanbolel@gmail.com"},
-    {"name": "Yannick Koehler", "email": "yannick@koehler.name"}
-  ]
+  }
 }

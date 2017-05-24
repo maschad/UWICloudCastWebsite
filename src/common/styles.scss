@@ -12,3 +12,139 @@
 ::selection {
   background: rgba(200,200,255,.1);
 }
+
+.anim_cont{
+  position: fixed;
+  bottom:27px;
+  left:22px;
+}
+
+.va{
+  margin-left: 22px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  width: 100px;
+  height: 100px;
+  background-image: url('https://s5.postimg.org/uuoduj1p3/va_sheet2.png');
+
+  animation: play 0.7s steps(3) infinite;
+  animation-direction: alternate;
+}
+
+.chat_bubble{
+  display: inline-block;
+
+  width: 200px;
+
+  font-size: 14pt;
+
+  border: 5px solid #F4D7E7;
+  border-radius: 20px;
+
+  height:58px;
+
+  background-color: white;
+}
+
+.chat_bubble p{
+  width: 190px;
+}
+
+.tri-right.btm-left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: 55px;/*auto*/
+  bottom: -40px;
+  border: 12px solid;
+  border-color: #F4D7E7 #F4D7E7 transparent transparent;
+}
+.tri-right.btm-left-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 34px;
+  right: auto;
+  top: 53px;/*auto*/
+  bottom: -20px;
+  border: 8px solid;
+  border-color: lightyellow lightyellow transparent transparent;
+}
+
+@keyframes play{
+  100% {background-position: -300px;}
+}
+
+.anim_cont{
+  position: fixed;
+
+  bottom:27px;
+  left:22px;
+}
+
+.va{
+  margin-left: 22px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  width: 100px;
+  height: 100px;
+  background-image: url('https://s5.postimg.org/uuoduj1p3/va_sheet2.png');
+
+  animation: play 0.7s steps(3) infinite;
+  animation-direction: alternate;
+}
+
+.chat_bubble{
+  display: inline-block;
+
+  width: 200px;
+
+  font-size: 14pt;
+
+  border: 5px solid #F4D7E7;
+  border-radius: 20px;
+
+  height:58px;
+
+  background-color: white;
+}
+
+
+.chat_bubble p{
+  width: 190px;
+}
+
+.tri-right.btm-left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: 55px;/*auto*/
+  bottom: -40px;
+  border: 12px solid;
+  border-color: #F4D7E7 #F4D7E7 transparent transparent;
+}
+.tri-right.btm-left-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 34px;
+  right: auto;
+  top: 53px;/*auto*/
+  bottom: -20px;
+  border: 8px solid;
+  border-color: lightyellow lightyellow transparent transparent;
+}
+
+@keyframes play{
+  100% {background-position: -300px;}
+}

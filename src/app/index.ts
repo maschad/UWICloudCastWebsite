@@ -4,10 +4,15 @@ import { RouterModule } from '@angular/router';
 
 import { AuthModule } from '../auth';
 import { FirebaseModule } from '../firebase';
-import { TasksModule } from '../tasks';
+import { ElasticModule } from 'angular2-elastic';
+
 
 import { AppComponent } from './components/app';
 import { AppHeaderComponent } from './components/app-header';
+import { ReadingModule } from "../reading-area";
+import {ResultsModule} from "../results-area/index";
+import {SidebarModule} from "ng-sidebar";
+import {PracticeModule} from "../practice-area/index";
 
 
 @NgModule({
@@ -20,10 +25,14 @@ import { AppHeaderComponent } from './components/app-header';
   ],
   imports: [
     BrowserModule,
+    ElasticModule,
     RouterModule.forRoot([], {useHash: false}),
+    SidebarModule.forRoot(),
     AuthModule,
     FirebaseModule,
-    TasksModule
+    ReadingModule,
+    ResultsModule,
+    PracticeModule
   ]
 })
 

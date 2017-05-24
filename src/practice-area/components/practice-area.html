@@ -1,0 +1,22 @@
+<div class="anim_cont">
+    <div class="va"></div>
+</div>
+
+<div class="g-col">
+    <div class="g-row">
+        <h3>Here are some words we have identified that can help you practice!</h3>
+    </div>
+
+    <div class="boxed">
+        <div *ngFor="let word of practiceWords">
+            <div class="g-row">
+                <div style="word-wrap: break-word;padding: 5px;" [ngStyle]= "{'color' : word.color}">{{word.title}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="g-row">
+        <h6>To begin reading, click the start button, the microphone will detect when you have finished reading.</h6>
+        <button [ngStyle]="{'backgroundColor': buttonColor}" class="button fa fa-microphone" (click)='record()'>{{buttonText}}</button>
+    </div>
+</div>
+

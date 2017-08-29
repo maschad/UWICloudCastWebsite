@@ -2,9 +2,8 @@
  * Created by carlos on 5/16/17.
  */
 export interface IScore {
-    $key?: number,
-    totalCorrect: number,
-    totalWrong: number,
+    totalCorrect: number
+    totalWrong: number
 }
 
 

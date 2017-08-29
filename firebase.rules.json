@@ -6,6 +6,20 @@
         ".read": "auth !== null && auth.uid === $uid",
         ".write": "auth !== null && auth.uid === $uid"
       }
+    },
+    "weakwords": {
+      ".read": true,
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid"
+      }
+    },
+    "users": {
+      ".read": true,
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid"
+      }
     }
   }
 }

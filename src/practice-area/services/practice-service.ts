@@ -10,26 +10,21 @@ import {Http, Headers, RequestOptions} from "@angular/http";
 
 @Injectable()
 export class PracticeService  {
-    private headers = new Headers({'Content-Type': 'application/json'});
-    private options = new RequestOptions({ headers: this.headers });
-    private dictionaryUrl = '../../common/dictionary.txt';
-    private path = `/weakwords/${this.auth.id}`;
+     headers: Headers = new Headers({'Content-Type': 'application/json'});
+     options: RequestOptions = new RequestOptions({ headers: this.headers });
+
 
 
     constructor(private db: AngularFireDatabase, private auth: AuthService, private http: Http) {}
 
-
-    getPracticeWords(success): void {
-        let weakwords = [];
-         this.db.object(this.path, {preserveSnapshot: true }).subscribe(snapshot => {
-             snapshot.forEach(function (word) {
-                 weakwords.push(word.val());
-             });
-             success(weakwords);
-         });
+    retrieveSentence(sentenceId: number): string[] {
+        let sentence:string [] = [];
+        //#TODO: Perform sentence transformation
+        return sentence;
     }
 
-    searchDictionary() {
+    sendAudio(audio: any): void {
 
     }
+
 }

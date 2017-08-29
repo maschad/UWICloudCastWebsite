@@ -9,7 +9,7 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
     createDb(): {} {
         let onScreenSentences = [
-            {id: 1, text: 'Hi my name is Chad', highestScore: 0},
+            {id: 1, text: 'EE', highestScore: 0},
             {id: 2, text: 'I went to the park today and it was very exciting', highestScore: 0},
             {id: 3, text: 'My favorite color is blue', highestScore: 5},
             {id: 4, text: 'Bob Marley was born in st Ann but grew up in trenchtown', highestScore: 14},

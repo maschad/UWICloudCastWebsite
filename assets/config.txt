@@ -1,0 +1,26 @@
+id: tedlium
+type: kaldinnet2onlinedecoder
+timeout: 10
+params:
+  use-threaded-decoder:  true
+  model :  exp/nnet3_combine_BrJm_2000/tdnn/final.mdl
+  word-syms : data/lang/words.txt
+  fst :  exp/tri3_combine_BrJm_2000/graph_Jamaican_test/HCLG.fst
+  mfcc-config : conf/mfcc.conf
+  ivector-extraction-config : conf/ivector_extractor.conf
+  max-active: 10000
+  beam: 10.0
+  lattice-beam: 6.0
+  acoustic-scale: 0.083
+  do-endpointing : true
+  endpoint-silence-phones : "1:2:3:4:5:6:7:8:9:10"
+  traceback-period-in-secs: 0.25
+  chunk-length-in-secs: 0.25
+  num-nbest: 5
+  #Additional functionality that you can play with:
+  #lm-fst:  data/models/tedlium_nnet_ms_sp_online/G.fst
+  #big-lm-const-arpa: data/models/tedlium_nnet_ms_sp_online/G.carpa
+  phone-syms: data/lang/phones.txt
+  word-boundary-file: data/lang/phones/word_boundary.int
+  do-phone-alignment: true
+  num-phone-alignment: 5

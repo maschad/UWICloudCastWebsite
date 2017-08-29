@@ -24,7 +24,7 @@ Quick Start
 
 ```shell
 $ git clone https://github.com/maschad/UWICloudCastWebsite.git
-$ cd todo-angular2-firebase
+$ cd UWICloudCastWebsite
 $ npm install
 $ npm start
 ```

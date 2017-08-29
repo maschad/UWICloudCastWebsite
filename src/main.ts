@@ -8,7 +8,6 @@ import { AppModule } from './app';
 import './common/styles.scss';
 import './common/anim.scss';
 
-
 if (process.env.NODE_ENV === 'production') {
   enableProdMode();
 }
